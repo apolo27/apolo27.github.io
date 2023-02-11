@@ -367,32 +367,32 @@ body {
  }
 
 .blockquote-wrapper {
-   display: flex;
-   height: 70vh;
-   padding: 0 20px;
+  display: flex;
+  height: 70vh;
+  padding: 0 20px;
 }
 
 .blockquote {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    max-width: 620px;
-    margin: 80px auto;
-    color: var(--lightTwo);
-    align-self: center;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  max-width: 620px;
+  margin: 80px auto;
+  color: var(--lightTwo);
+  align-self: center;
 }
 
 .blockquote h1 {
   font-family: 'Poppins', sans-serif;
-    position: relative; 
-    color: #e74848;
-    font-size: 2.8rem;
-    font-weight: normal;
-    line-height: 1;
-    margin: 0;
-    border: 2px solid var(--lightTwo);
-    border: solid 2px;
-    border-radius:20px;
-    padding: 25px;
+  position: relative; 
+  color: #e74848;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  border: 2px solid var(--lightTwo);
+  border: solid 2px;
+  border-radius:20px;
+  padding: 25px;
 }
 
 .blockquote h1:after {
@@ -455,4 +455,76 @@ body {
 .image-polaroid{
   position: relative;
   max-width: 460px;
+}
+
+.our-story-img{
+  max-width: 320px;
+  border-radius: 20px;
+  margin-right: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper{
+  margin: 20px auto;
+  width: 50%;
+  column-count: 2;
+  column-gap: 40px;
+  column-rule-style: solid;
+ }
+
+.text-box{
+  color: var(--lightTwo);
+}
+
+.title h2{
+  margin-top: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  color: var(--lightTwo);
+  text-align: center;
+}
+
+.text-box p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.square {
+  width: 300px;
+  height: 200px;
+  background-color: #b7b7b7;
+  float: left;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.square h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.square p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
 }
