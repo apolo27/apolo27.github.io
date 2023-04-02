@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apolo 27</title>
-    <link rel="stylesheet" href="landing-page.css" />
-
+    <link rel="stylesheet" href="landing-page.css"/>
   </head>
   <body>
     <main>
       <div class="big-wrapper light">
+
         <header>
           <div class="container">
+
             <div class="logo">
-              <img src="./img/logo.png" alt="Logo" />
+              <img src="./img/logo-white.png" alt="Logo"/>
             </div>
 
             <div class="links">
@@ -35,23 +36,18 @@
             </div>
           </div>
         </header>
-        <div class="container-bg">
-
-        </div>
           <div class="showcase-area">
-            
             <div class="container">
+              <div class="section"></div>
               <div class="left">
                 <div class="big-title">
-                  <h1>Apolo 27</h1>
+                  <h1><span class="auto-type"></span></h1>
                 </div>
                 <p class="text">
-                  Official team of Instituto Tecnológico de Santo Domingo,
-                  <br>participants of NASA Human Exploration Challenge.
+                  Instituto Tecnológico de<br> Santo Domingo's 
+                  official team<br> participating in
+                  NASA's Human<br> Exploration Challenge.
                 </p>
-                <div class="cta">
-                  <a href="#" class="btn">Learn More</a>
-                </div>
               </div>
           </div>
         </div>
@@ -66,6 +62,19 @@
         </div>
       </div>
     </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Apolo 27", "Determined dominicans", "Apolo 27"],
+        typeSpeed: 80,
+        backSpeed: 60,
+        loop: false
+      })
+
+    </script>
+
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <script src="general.js"></script>
   </body>

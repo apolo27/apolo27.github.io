@@ -2,9 +2,9 @@
 
 .light {
   --mainColor: #004aad;
-  --hoverColor: #1c7eff;
+  --hoverColor: #617997;
   --backgroundColor: #000000;
-  --darkOne: #b6b6b6;
+  --darkOne: #f3f3f3;
   --darkTwo: #fff;
   --lightOne: #ccc;
   --lightTwo: #e7e3e3;
@@ -12,11 +12,11 @@
 
 .dark {
   --mainColor: #004aad;
-  --hoverColor: #002b63;
+  --hoverColor: #011d42;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
   --darkTwo: #202020;
-  --lightOne: #000000;
+  --lightOne: #484848;
   --lightTwo: #222222;
 }
 
@@ -31,7 +31,35 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.section {
+  background: transparent;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
 
+.section::before {
+  animation: bounce 1s ease infinite;
+  bottom: 2rem;
+  color: #fff;
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -55,6 +83,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url("./img/background-landingpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
@@ -85,6 +117,7 @@ header .container {
   display: flex;
   align-items: center;
   cursor: pointer;
+
 }
 
 .logo img {
@@ -108,6 +141,7 @@ header .container {
   margin-left: 4.5rem;
   display: inline-block;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .links a:hover {
@@ -187,28 +221,24 @@ header .container {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  
 }
 
 .big-title {
   margin: 3.9rem 0 2.5rem;
-  font-size: 1.4rem;
-  color: #f1f8fc;
+  font-size: 2.2rem;
+  color: var(--darkOne);
   text-transform: capitalize;
   line-height: 1.4;
 }
 
 .text {
   color: var(--lightOne);
-  font-size: 1.1rem;
-  margin: 3.9rem 0 2.5rem;
+  font-size: 1.10rem;
+  margin: auto;
   max-width: 600px;
-  line-height: 2.3;
+  line-height: 1.5;
   z-index: 1;
-}
-
-.showcase-area .btn {
-  box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
 }
 
 .toggle-btn {
@@ -273,7 +303,7 @@ header .container {
   .hamburger-menu {
     display: flex;
   }
-
+  
   .links {
     position: fixed;
     top: 0;
@@ -317,6 +347,10 @@ header .container {
     transition: 0.5s;
   }
 
+  .big-wrapper{
+    background-image: url("./img/background-responsive.jpg")
+  }
+
   .big-wrapper.active .links {
     transform: translateX(0);
     box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.4);
@@ -340,12 +374,13 @@ header .container {
   }
 
   .big-title {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
+    margin: auto;
   }
 
   .text {
-    font-size: 0.95rem;
-    margin: 1.4rem 0 1.5rem;
+    font-size: 1.2rem;
+    margin: 2.4rem 0 1.5rem;
   }
 
   .logo h3 {
@@ -360,7 +395,9 @@ header .container {
   }
 
   .big-title {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
   }
 
   .text {
@@ -379,22 +416,4 @@ header .container {
   overflow: hidden;
   z-index: 0;
   
-}
-
-.container-bg{
-  width: 100%;
-  height: 100vh;
-  background-image: url(img/background.png);
-  background-size: cover;
-  background-position: center;
-  padding: 0 8%;
-  position: absolute;
-  top: 0%;
-  opacity: 80%;
-
-}
-
-.container-bg {
-  height: 100vh;
-  width: 100vw;
 }

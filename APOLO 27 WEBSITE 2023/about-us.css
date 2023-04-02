@@ -2,7 +2,7 @@
 
 .light {
   --mainColor: #004aad;
-  --hoverColor: #2784ff;
+  --hoverColor: #74b0ff;
   --backgroundColor: #000000;
   --darkOne: #f3f3f3;
   --darkTwo: #fff;
@@ -12,7 +12,7 @@
 
 .dark {
   --mainColor: #004aad;
-  --hoverColor: #2784ff;
+  --hoverColor: #002b63;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
   --darkTwo: #202020;
@@ -458,11 +458,17 @@ body {
 }
 
 .our-story-img{
-  max-width: 320px;
+  max-width: 420px;
   border-radius: 20px;
   margin-right: 15px;
   display: block;
   margin: 0 auto;
+}
+
+.image-our-story{
+  position: relative;
+  border-radius: 12px;
+  margin-left: 15px;
 }
 
 .wrapper{
@@ -472,20 +478,27 @@ body {
 
 .text-box{
   color: var(--lightTwo);
+  text-align: justify;
 }
 
 .title h2{
-  margin-top: 150px;
+  margin-top: 200px;
   font-family: 'Poppins', sans-serif;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: bolder;
   color: var(--lightTwo);
   text-align: center;
+  text-transform: uppercase;
+  /* -webkit-text-stroke: 2px var(--hoverColor); */
 }
 
 .text-box p{
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   text-align: center;
+  margin-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 *{
@@ -515,16 +528,10 @@ body {
   margin-top: 40px;
 }
 .title{
+  margin-top:  40px;
   margin-bottom: 40px;
 }
-.title h1{
-  color: var(--darkTwo);
-  text-align: center;
-  font-weight: 600px;
-  font-size: 40px;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1px;
-}
+
 .filter-btns{
   text-align: center;
 }
