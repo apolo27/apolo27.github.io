@@ -101,6 +101,7 @@ header .container {
   cursor: pointer;
   font-weight: 600;
   margin-top: -20px;
+  color: var(--lightTwo);
 }
 .links a {
   color: var(--lightTwo);

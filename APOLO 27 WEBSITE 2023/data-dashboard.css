@@ -8,6 +8,7 @@
   --darkTwo: #fff;
   --lightOne: #ccc;
   --lightTwo: #e7e3e3;
+  --lightThree: #312f3a;
 }
 
 .dark {
@@ -18,6 +19,7 @@
   --darkTwo: #202020;
   --lightOne: #484848;
   --lightTwo: #222222;
+  --lightThree: #ccc;
 }
 
 *,
@@ -54,7 +56,6 @@ a {
   background-color: var(--backgroundColor);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .container {
@@ -90,17 +91,15 @@ header .container {
 .logo img {
   width: 60px;
   margin-right: 0.6rem;
-  margin-bottom: 0rem;
-  margin-top: -1rem;
+  margin-top: -0.6rem;
 }
 
 .links ul {
+  color: var(--darkOne);
   display: flex;
   list-style: none;
   align-items: center;
-  cursor: pointer;
   font-weight: 600;
-  margin-top: -20px;
 }
 
 .links a {
@@ -108,7 +107,7 @@ header .container {
   margin-left: 4.5rem;
   display: inline-block;
   transition: 0.3s;
-  cursor: pointer;
+  font-weight: 600;
 }
 
 .links a:hover {
@@ -119,8 +118,8 @@ header .container {
 .btn {
   display: inline-block;
   padding: 0.9rem 1.9rem;
-  color: #fff !important;
-  background-color: var(--mainColor);
+  color: var(--lightTwo) !important;
+  background-color: var(--lightTwo);
   border-radius: 16px;
   text-transform: capitalize;
   transition: 0.3s;
@@ -224,9 +223,8 @@ header .container {
   border-radius: 50%;
   font-size: 1.1rem;
   transition: 0.3s;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  position: relative;
+  float: right;
 }
 
 .toggle-btn i {
@@ -253,13 +251,6 @@ header .container {
   display: none;
 }
 
-.copy {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  animation: appear 1s 1 both;
-}
 
 @keyframes appear {
   0% {
@@ -380,4 +371,152 @@ header .container {
   overflow: hidden;
   z-index: 0;
   
+}
+
+#chart{
+  width: max-content;
+  position: relative;
+  z-index: 2;
+}
+
+.center{
+  text-align: center;
+  font-weight: 1000;
+}
+
+.button-s{
+  align-self: flex-start;
+  width: 70%;
+  padding: 3% 5%;
+  text-align: center;
+}
+.button-s span{
+  padding: 0;
+  margin: 0 !important;
+}
+.b1{
+  text-align: end;
+  margin: auto;
+}
+.b1 button{
+  background-color: var(--backgroundColor);
+}
+.b1 button::hover{
+  background-color: var(--backgroundColor);
+}
+.b2 button{
+  background-color: var(--backgroundColor);
+}
+h2{
+  color: var(--darkTwo);
+}
+
+/* Mapa */
+.ligth #mapa{
+  width: 100%;
+  filter: opacity(100%);
+}
+.dark #mapa{
+  width: 100%;
+  filter: opacity(70%);
+}
+
+.card-chart{
+  padding-top: 5px;
+  border-radius: 5%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+.card-chart{
+  font-size: 1rem;
+}
+
+.card-chart > .title{
+  margin-left: 20px;
+}
+.chart-small{
+  padding: 0;
+  margin: 0;
+}
+
+.title-btn{
+  background-color: var(--lightThree);
+  color: var(--darkTwo);
+  padding: 10px;
+}
+.labels-card{
+  text-align: center;
+  align-items: center;
+  font-size: 10px;
+  position: relative;
+  bottom: 0;
+}
+.circle{
+  border-radius: 50%;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+}
+.black{
+  background-color: gray;
+}
+
+#body-1{
+  animation: fadeIn 2s;
+}
+#body-2{
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+span.title{
+  color: var(--lightTwo);
+}
+
+svg {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+svg .apexcharts-xaxis-label {
+  fill: var(--lightTwo);
+}
+svg .apexcharts-yaxis-label {
+  fill: var(--lightTwo);
+}
+.title-btn{
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  /* For tablets: */
+  #speed-chart{
+    margin-top: 25px;
+  }
+  .card-chart{
+    margin: 0 6%;
+  }
+  .chart-bad{
+    margin-left: 7%;
+    margin-right: 7%;
+    width: 85%;
+  }
+
+  #mapa{
+    width: 90%;
+    margin: 25px auto;
+    margin-top: 0;
+  }
+  button{
+    width: 10%;
+  }
+  .chart-2{
+    margin: 20px 10px;
+  }
 }

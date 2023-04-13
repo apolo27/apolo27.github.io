@@ -54,7 +54,7 @@ a {
   background-color: var(--backgroundColor);
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .container {
@@ -253,15 +253,6 @@ header .container {
   display: none;
 }
 
-.shape {
-  position: absolute;
-  z-index: 0;
-  width: 500px;
-  bottom: -180px;
-  left: -15px;
-  opacity: 0.1;
-}
-
 .copy {
   position: absolute;
   top: 0;
@@ -349,15 +340,6 @@ header .container {
     grid-gap: 2rem;
   }
 
-  .big-title {
-    font-size: 1.1rem;
-  }
-
-  .text {
-    font-size: 0.95rem;
-    margin: 1.4rem 0 1.5rem;
-  }
-
   .logo h3 {
     font-size: 1.25rem;
   }
@@ -389,95 +371,4 @@ header .container {
   overflow: hidden;
   z-index: 0;
   
-}
-
-/* Social Media */
-.card{
-  width: 80%;
-  border-radius: 40px;
-  text-align: center;
-  padding: 20px;
-  margin: 0 auto ;
-  
-}
-.title-h1{
-  margin: 0;
-  font-size: 5vh;
-  padding: 5px;
-}
-.card-red{
-  background-color: #FF1515;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  padding: 1%;
-  color: white;
-}
-
-.ellipse-1{
-  position: absolute;
-  top: -40vh;
-  left: -10vh;
-}
-.ellipse-2{
-  position: absolute;
-  top: -40vh;
-  left: 10vh;
-}
-.ellipse-3{
-  position: absolute;
-  top: 0vh;
-  left: 0;
-}
-
-#rocket{
-  position: relative;
-  z-index: 2;
-  width: 250px;
-  margin-top: 75px;
-  animation: rotation 5s infinite ease-out;
-}
-@keyframes rotation {
-  0%   {transform: rotate(-10deg);}
-  25%  {transform: rotate(-5);}
-  50%  {transform: rotate(10deg);}
-  75%  {transform: rotate(5deg);}
-  100% {transform: rotate(-10deg);}
-  
-}
-#div-rocket{
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  margin: auto;
-  text-align: center;
-  align-self: center;
-  
-  border: 5px solid #205982;
-  background: linear-gradient(rgba(7, 75, 208, 0.55), transparent);
-}
-.body-apolo{
-  position: relative;
-  z-index: 2;
-  color: var(--lightTwo);
-  margin: 0;
-}
-.text-small{
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
-}
-.text-small h5{
-  font-weight: bolder;
-  line-height: 1.4;
-}
-.text-small p{
-  font-weight: 300;
-}
-.buttons-donate{
-  width: 75%;
-  text-align: center;
-  margin: 0 auto;
-}
-.buttons-donate img{
-  width: 100%;
 }
