@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apolo 27</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="data-dashboard.css" />
+    
+  </head>
+  <body>
+    
+    <main>
+      <div class="big-wrapper light">
+        <header>
+          <div class="container">
+
+            <div class="logo">
+              <img src="./img/logo.png" alt="Logo" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a id="home-button">Home</a></li>
+                <li><a id="about-us-button">About Us</a></li>
+                <li><a id="blog-button">Blog</a></li>
+                <li><a id="data-dashboard-button">Data Dashboard</a></li>
+                <li><a id="sponsors-button">Sponsors</a></li>
+                <li><a id="social-media-button">Social Media</a></li>
+              </ul>
+            </div>
+            
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+        
+        <div class="row">
+          <div class="col-lg-1"></div>
+
+          <div class="body-apolo col-lg-10">  
+            <div class="row center mt-1">
+              <h2>DATA DASHBOARD</h2>
+            </div>
+            <div class="row mt-1">
+              <div class="col-lg-4 col-sm-2"></div>
+              <div class="col-lg-2 col-sm-4 col-6 b1">
+                <button type="button" id="button-vehicle" class="btn btn-primary btn-xs button-s" onclick="toogleToScreen('vehicle')"><span>VEHICLE</span></button>
+              </div>
+              <div class="col-lg-2 col-sm-4 col-6 b2">
+                <button type="button" id="button-tripulant" class="btn btn-secondary btn-xs button-s" onclick="toogleToScreen('tripulants')"><span>TRIPULANTS</span></button>
+              </div>
+              <div class="col-lg-4 col-sm-2"></div>
+            </div>
+            <div class="row mt-2 flex-wrap"  id="body-1">
+              <!-- <div class="mr-2"></div> -->
+              
+                <div class="col-lg-6 order-lg-2 order-sm-1">
+                <div class="row">
+                  <img src="img/Mapa.png" id="mapa">
+                </div>
+              </div>
+
+              <div class="col-lg-6 order-lg-1 order-sm-2">
+
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="row">
+                      <div class="card-chart chart-bad">
+                        <span class="title">
+                          Temperature
+                        </span>
+                        <div id="chart-temperature" class="chart">
+    
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      
+                      <div class="card-chart mt-4 chart-bad">
+                        <span class="title">Humidity</span>
+                        <div id="chart-tripulant-2" class="chart-small chart">
+  
+                        </div>
+                      </div>  
+                    </div>
+                    
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="">
+                      <div class="card-chart" id="speed-chart">
+                        <span class="title">
+                          Speed
+                        </span>
+                      <div id="chart-oxygen" class="chart">
+                        
+                      </div>                    
+                    </div>
+                    <div class="row labels-card mt-5">
+                      <div class="col-1"></div>
+                      <div class="col-4 title-btn">
+                        
+                          <div class="row">
+                            <div class="col-2">
+                              <div class="circle black"></div>
+                            </div>
+                            
+                            <div class="col-6">Active</div>
+                          </div>
+                        
+                      </div>
+                      <div class="col-2"></div>
+                      <div class="col-4 title-btn">
+                        <div class="row">
+                          <div class="col-2">
+                            <div class="circle"></div>
+                          </div>
+                          
+                          <div class="col-6">Movement</div>
+                        </div>
+                      <div class="col-1"></div>
+                    </div> 
+                    
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+              <!-- <div class="ml-2"></div> -->
+            </div>
+            </div>
+              <div class="row mt-2" id="body-2" style="">
+                <div class="col-lg-6">
+                  <div class="row chart-2">
+                    <span class="title">Heart Rate</span>
+                    <div id="heart-rate-chart" class="chart"></div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row chart-2">
+                    <span class="title">Temperature</span>
+                    <div id="temperature-body-chart" class="chart"></div>
+                  </div>
+                </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-1"></div>
+        </div>
+
+        <!-- Tripulants -->
+
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+    <script src="general.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="data-dashboard.js"></script>
+    <script>
+      // document.querySelector(".far.fa-sun").click()
+    </script>
+
+    <!-- Dashboard -->
+    <script type="text/javascript">
+      var date = [];
+      var temperature_ambiental = [];
+      var speed = [];
+      var humidity = [];
+      var heart_rate_1 = [];
+      var heart_rate_2 = [];
+      var temperature_1 = [];
+      var temperature_2 = [];
+
+      function update_char(object){
+        let actual_date = new Date(object.date)
+        date.push(actual_date.toISOString())
+        temperature_ambiental.push(Math.round(object.temp)*100)/100;
+        speed.push(Math.round(object.speed*100)/100);
+        humidity.push(Math.round(object.humidity*100)/100);
+        heart_rate_1.push(Math.round(object.heart_rate_1*100)/100);
+        heart_rate_2.push(Math.round(object.heart_rate_2*100)/100);
+        temperature_1.push(Math.round(object.temperature_1*100)/100);
+        temperature_2.push(Math.round(object.temperature_2*100)/100);
+      }
+
+      get();
+
+      let size=190;
+      var options_temperature = {
+        animation:{
+          duration:0
+        },  
+        series: [{
+          name: 'Ambiental',
+          data: temperature_ambiental
+        }
+        ],
+          chart: {
+            
+            toolbar:{
+            tools:{
+              download: false,
+              selection: false,
+              zoom: false,
+              zoomin: false,
+              zoomout: false,
+              pan: false,
+              reset: false,
+            }
+          },
+            height: size,
+          type: 'area'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        markers: {
+            size: 1,
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: date
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+          
+        var chart_temperature = new ApexCharts(document.querySelector("#chart-temperature"), options_temperature);
+        chart_temperature.render(0);
+
+        var options_oxygen = {
+          animation:{
+            duration:0
+          },
+          series: [{
+            name: "Speed",
+            data: speed},
+          ],
+          chart: {
+          toolbar:{
+            tools:{
+              download: false,
+              selection: false,
+              zoom: false,
+              zoomin: false,
+              zoomout: false,
+              pan: false,
+            }
+          },
+          height:size,
+          type: 'line',
+          zoom: {
+            enabled: false
+          }
+        },
+        markers: {
+            size: 5,
+        },
+        dataLabels: {
+          enabled: false
+        },
+  
+        stroke: {
+          curve: 'straight'
+        },
+        title: {
+          // text: 'Product Trends by Month',
+          align: 'left'
+        },
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: date
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart_oxygen = new ApexCharts(document.querySelector("#chart-oxygen"), options_oxygen);
+        chart_oxygen.render(0);
+        
+        // TripulantsWS
+        var options_tripulant_2 = {
+          animation:{
+            duration:0
+          },
+          series: [{
+            name: "Humidity",
+            data: humidity
+        }],
+          chart: {
+          height: size,
+          type: 'line',
+          zoom: {
+            enabled: false
+          },
+          toolbar:{
+            tools:{
+              download: false,
+              selection: false,
+              zoom: false,
+              zoomin: false,
+              zoomout: false,
+              pan: false,
+            }
+          }
+        },
+        
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: date
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var chart_tripulant_2 = new ApexCharts(document.querySelector("#chart-tripulant-2"), options_tripulant_2);
+        chart_tripulant_2.render(0);
+      
+      
+        // Body 2
+        var options = {
+          animation:{
+            duration:0
+          },
+          series: [{
+          name: 'Tripulant 1',
+          data: temperature_1
+        }, {
+          name: 'Tripulant 2',
+          data: temperature_2
+        }],
+          chart: {
+          height: 350,
+          type: 'area'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: date
+          // categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        title: {
+          // text: 'Heart Rate',
+          align: 'left'
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var heart_rate_chart = new ApexCharts(document.querySelector("#heart-rate-chart"), options);
+        heart_rate_chart.render(0);
+
+        var options = {
+          animation:{
+            duration:0
+          },
+          series: [{
+            name: "Tripulant 1",
+            data: heart_rate_1
+          },
+          {
+            name: "Tripulant 2",
+            data: heart_rate_2
+          }
+        ],
+          chart: {
+          height: 350,
+          type: 'line',
+          
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: [5, 7],
+          curve: 'straight',
+          dashArray: [0, 8]
+        },
+        title: {
+          // text: 'Body Temperature',
+          align: 'left'
+        },
+        markers: {
+          size: 0,
+          hover: {
+            sizeOffset: 6
+          }
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: date
+        },
+        
+        grid: {
+          borderColor: '#f1f1f1',
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        };
+
+        var temperature_body = new ApexCharts(document.querySelector("#temperature-body-chart"), options);
+        temperature_body.render(0);
+
+        function update_every_charts(){
+          temperature_body.update(0);
+          chart_tripulant_2.update(0);
+          chart_oxygen.update(0);
+          chart_temperature.update(0);
+          heart_rate_chart.update(0);
+        }
+        setTimeout(function() {
+          document.querySelector("#button-tripulant").click();
+          setTimeout(function() {
+            document.querySelector("#button-vehicle").click();
+          }, 50);
+        }, 50);
+        
+        setInterval(() => {
+          get_only_last();
+          update_every_charts();
+        }, 1000);
+        
+       
+    </script>
+  
+  <!-- Database -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+  <script src="theme.js"></script>
+  <!-- <script src="database.js"></script> -->
+
+  <!-- <script src="database.js" type="module"></script> -->
+  
+  </body>
+</html>
