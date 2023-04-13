@@ -118,7 +118,7 @@ header .container {
 .btn {
   display: inline-block;
   padding: 0.9rem 1.9rem;
-  color: var(--lightTwo) !important;
+  color: -- !important;
   background-color: var(--lightTwo);
   border-radius: 16px;
   text-transform: capitalize;
