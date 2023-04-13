@@ -340,15 +340,6 @@ header .container {
     grid-gap: 2rem;
   }
 
-  .big-title {
-    font-size: 1.1rem;
-  }
-
-  .text {
-    font-size: 0.95rem;
-    margin: 1.4rem 0 1.5rem;
-  }
-
   .logo h3 {
     font-size: 1.25rem;
   }
