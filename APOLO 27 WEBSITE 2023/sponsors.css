@@ -433,3 +433,32 @@ body {
   width: auto;
   margin: 0 40px;
 }
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--darkOne);
+}
+
+.paragraph {
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--darkOne);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2em;
+  }
+  
+  .paragraph {
+    font-size: 1em;
+  }
+}
+
