@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.light {
+.dark {
   --mainColor: #004aad;
   --hoverColor: #74b0ff;
   --backgroundColor: #000000;
@@ -10,7 +10,7 @@
   --lightTwo: #e7e3e3;
 }
 
-.dark {
+.light {
   --mainColor: #004aad;
   --hoverColor: #002b63;
   --backgroundColor: #f1f8fc;

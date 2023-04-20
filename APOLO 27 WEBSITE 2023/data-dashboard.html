@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apolo 27</title>
-    <link rel="icon" type="image/x-icon" href="./img/logo-white.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="data-dashboard.css" />
     
   </head>
@@ -50,19 +50,19 @@
             <div class="row mt-1">
               <div class="col-lg-4 col-sm-2"></div>
               <div class="col-lg-2 col-sm-4 col-6 b1">
-                <button type="button" id="button-vehicle" class="btn btn-primary btn-xs button-s" onclick="toogleToScreen('vehicle')">VEHICLE</button>
+                <button type="button" id="button-vehicle" class="btn btn-primary btn-xs button-s" onclick="toogleToScreen('vehicle')"><span>VEHICLE</span></button>
               </div>
               <div class="col-lg-2 col-sm-4 col-6 b2">
-                <button type="button" id="button-tripulant" class="btn btn-secondary btn-xs button-s" onclick="toogleToScreen('tripulants')">TRIPULANTS</button>
+                <button type="button" id="button-tripulant" class="btn btn-secondary btn-xs button-s" onclick="toogleToScreen('tripulants')"><span>TRIPULANTS</span></button>
               </div>
               <div class="col-lg-4 col-sm-2"></div>
             </div>
-            <div class="row mt-2 flex-wrap"  id="body-1">
-              <!-- <div class="mr-2"></div> -->
+            <div class="row mt-2 flex-wrap"  id="body-1">             <!-- <div class="mr-2"></div> -->
               
                 <div class="col-lg-6 order-lg-2 order-sm-1">
                 <div class="row">
-                  <img src="./img/mapa.png" id="mapa">
+                  <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757.323364318444!2d-86.65393620729445!3d34.712362550638034!2m3!1f90!2f0!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88626c10a5eae5d7%3A0x3e32325e196cc12e!2sU.S.%20Space%20%26%20Rocket%20Center!5e1!3m2!1ses-419!2sus!4v1681927953420!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <!-- <img src="img/Mapa.png" id="mapa"> -->
                 </div>
               </div>
 

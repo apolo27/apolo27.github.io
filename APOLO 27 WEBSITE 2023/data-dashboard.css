@@ -2,17 +2,6 @@
 
 .light {
   --mainColor: #004aad;
-  --hoverColor: #74b0ff;
-  --backgroundColor: #000000;
-  --darkOne: #f3f3f3;
-  --darkTwo: #fff;
-  --lightOne: #ccc;
-  --lightTwo: #e7e3e3;
-  --lightThree: #312f3a;
-}
-
-.dark {
-  --mainColor: #004aad;
   --hoverColor: #002b63;
   --backgroundColor: #f1f8fc;
   --darkOne: #312f3a;
@@ -20,6 +9,17 @@
   --lightOne: #484848;
   --lightTwo: #222222;
   --lightThree: #ccc;
+}
+
+.dark {
+  --mainColor: #004aad;
+  --hoverColor: #74b0ff;
+  --backgroundColor: #000000;
+  --darkOne: #f3f3f3;
+  --darkTwo: #fff;
+  --lightOne: #ccc;
+  --lightTwo: #e7e3e3;
+  --lightThree: #312f3a;
 }
 
 *,
@@ -99,7 +99,6 @@ header .container {
   display: flex;
   list-style: none;
   align-items: center;
-  font-weight: 600;
 }
 
 .links a {
@@ -107,8 +106,6 @@ header .container {
   margin-left: 4.5rem;
   display: inline-block;
   transition: 0.3s;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .links a:hover {
@@ -119,8 +116,8 @@ header .container {
 .btn {
   display: inline-block;
   padding: 0.9rem 1.9rem;
-  color: -- !important;
-  background-color: var(--lightTwo);
+  color: #fff !important;
+  background-color: var(--mainColor);
   border-radius: 16px;
   text-transform: capitalize;
   transition: 0.3s;
@@ -212,6 +209,11 @@ header .container {
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
 }
 
+.person {
+  width: 123%;
+  transform: translate(15%, 25px);
+}
+
 .toggle-btn {
   display: inline-block;
   border: none;
@@ -224,8 +226,6 @@ header .container {
   border-radius: 50%;
   font-size: 1.1rem;
   transition: 0.3s;
-  position: relative;
-  float: right;
 }
 
 .toggle-btn i {
@@ -252,6 +252,22 @@ header .container {
   display: none;
 }
 
+.shape {
+  position: absolute;
+  z-index: 0;
+  width: 500px;
+  bottom: -180px;
+  left: -15px;
+  opacity: 0.1;
+}
+
+.copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  animation: appear 1s 1 both;
+}
 
 @keyframes appear {
   0% {
@@ -400,13 +416,13 @@ header .container {
   margin: auto;
 }
 .b1 button{
-  background-color: var(--backgroundColor);
+  background-color: var(--mainColor);
 }
 .b1 button::hover{
-  background-color: var(--backgroundColor);
+  background-color: var(--hoverColor);
 }
 .b2 button{
-  background-color: var(--backgroundColor);
+  background-color: var(--lightOne);
 }
 h2{
   color: var(--darkTwo);
@@ -478,6 +494,8 @@ span.title{
   color: var(--lightTwo);
 }
 
+
+
 svg {
   background-color: #fff;
   font-family: Arial, sans-serif;
@@ -521,3 +539,8 @@ svg .apexcharts-yaxis-label {
     margin: 20px 10px;
   }
 }
+
+
+
+
+
