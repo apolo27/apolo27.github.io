@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apolo 27</title>
+  <link rel="stylesheet" href="about-us.css" />
+  <link rel="icon" type="image/x-icon" href="./img/logo-white.ico">
+
+</head>
+
+<body>
+  <main>
+    <!-- HEADER -->
+    <div class="big-wrapper light">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img src="./img/logo.png" alt="Logo" />
+          </div>
+          <!-- BOTONES HEADER  -->
+          <div class="links">
+            <ul>
+              <li><a id="home-button">Home</a></li>
+              <li><a id="about-us-button">About Us</a></li>
+              <li><a id="blog-button">Blog</a></li>
+              <li><a id="data-dashboard-button">Data Dashboard</a></li>
+              <li><a id="sponsors-button">Sponsors</a></li>
+              <li><a id="social-media-button">Social Media</a></li>
+            </ul>
+          </div>
+
+          <div class="overlay"></div>
+          <!-- HAMURGER MENU DISPOSITIVOS MÓVILES (RESPONSIVE) -->
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- CAROUSEL DE FOTOS INICIO ABOUT US -->
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="./img/about-us/2.jpeg" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">Get to know all about us</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Our Story</h1>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="window.location.href='#timeline'">Learn More</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./img/about-us/1.JPG" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Meet members of our team</p>
+              <p class="display-1 fw-bolder text-capitalize">Apolo 27</p>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="window.location.href='#members-section'">Our Members</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="./img/about-us/3.JPG" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Discover the awards we have won</p>
+              <p class="display-1 fw-bolder text-capitalize">2 times category winners</p>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="window.location.href='#awards-section'"">Our Awards</button>
+            </div>
+          </div>
+            <div class="carousel-item c-item">
+              <img src="/img/about-us/4.jpg" class="d-block w-100 c-img" alt="Slide 4">
+              <div class="carousel-caption top-0 mt-4">
+                <p class="text-uppercase fs-3 mt-5">Making STEM accesible for everyone is one of our principal objectives</p>
+                <p class="display-1 fw-bolder text-capitalize">STEM is for everyone</p>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5" onclick="window.location.href='#stem'">Apolo 27 + STEM</button>
+              </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- FRASE -->
+      <div class="blockquote-wrapper">
+        <div class="blockquote">
+          <h1>
+            It <span style="color: var(--lightTwo);">always</span> seems to be <span
+              style="color: var(--lightTwo);">impossible </span><span>until it is done.</span>
+          </h1>
+          <h4>&mdash;Nelson Mandela<br><em></em></h4>
+        </div>
+      </div>
+      <!-- IMÁGEN POLAROID DEBAJO DE FRASE -->
+      <div class="polaroid-img">
+        <img src="./img/about-us/7.png" class="image-polaroid">
+      </div>
+
+      <div class="wrapper">
+        <!-- LINEA DE TIEMPO OUR STORY -->
+        <section id=timeline>
+          <h1>Our Story</h1>
+          <p class="leader">Get to know us: The Birth of Apolo 27. From Dreaming to Reality</p>
+          <div class="demo-card-wrapper">
+            <div class="demo-card demo-card--step1">
+              <div class="head">
+                <div class="number-box">
+                  <span>2019</span>
+                </div>
+                <h2><span class="small">Making History</span>Representing DR in NASA HERC</h2>
+              </div>
+              <div class="body">
+                <p>In 2019, we started with just a few members, and it was a challenging time for us.
+                   But we were determined to represent our country for the first time ever in the NASA
+                  Human Exploration Rover Challenge, and we did just that.</p>
+                <img src="/img/about-us/2019.jpg" alt="2019">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step2">
+              <div class="head">
+                <div class="number-box">
+                  <span>2020</span>
+                </div>
+                <h2><span class="small">Learning from Challenges</span>First Award Amid Global Pandemic</h2>
+              </div>
+              <div class="body">
+                <p>In 2020, despite the challenges posed by the pandemic, we persevered
+                   and learned valuable lessons that helped us grow, which led to win our first award:
+                   "System Safety Award". </p>
+                <img src="/img/about-us/2020.jpg" alt="2020">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step3">
+              <div class="head">
+                <div class="number-box">
+                  <span>2021</span>
+                </div>
+                <h2><span class="small">Pushing Ourselves to New Heights</span> Adaptation</h2>
+              </div>
+              <div class="body">
+                <p>In 2021, we continued to promote STEM
+                  in our country. Also, we focused in making the Rover's design even better.
+                  We also successfully raised awareness for STEM in 
+                  our country.</p>
+                <img src="/img/about-us/2021.jpg" alt="2021">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step4">
+              <div class="head">
+                <div class="number-box">
+                  <span>2022</span>
+                </div>
+                <h2><span class="small">Inspiring the Next Generation</span> Winning STEM Engagement Award</h2>
+              </div>
+              <div class="body">
+                <p>In 2022, we focused on even more aspects of STEM. This led us to create the STEM Tour, an event
+                  where we showcased interactive STEM projects.
+                  This year, we won "STEM Engagement Award".</p>
+                <img src="/img/about-us/2022.jpg" alt="2022">
+              </div>
+            </div>
+        
+            <div class="demo-card demo-card--step5">
+              <div class="head">
+                <div class="number-box">
+                  <span>2023</span>
+                </div>
+                <h2><span class="small">Pushing the Boundaries</span>PRESENT</h2>
+              </div>
+              <div class="body">
+                <p>In 2023, we're still in the process, but our focus remains on making our rover the best one
+                  yet. We also believe that STEM can change the world, that's why we are committed to push it even more
+                  in our country.</p>
+                <img src="/img/about-us/2023.jpg" alt="2023">
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <!-- MIEMBROS DE APOLO 27 2023 -->
+        <div class="wrapper">
+          <section id="members-section">
+            <div class="title">
+              <h2>Our Members</h2>
+            </div>
+            <div class="category-filter">
+              <div class="container">
+                <div class="filter-btns">
+                  <button type="button" class="filter-btn" id="all">All</button>
+                  <button type="button" class="filter-btn" id="manufacturing">Manufacturing</button>
+                  <button type="button" class="filter-btn" id="telemetry">Telemetry</button>
+                  <button type="button" class="filter-btn" id="mentors">Mentors</button>
+                  <button type="button" class="filter-btn" id="women-in-stem">Women In STEM</button>
+                </div>
+
+                <div class="filter-items">
+
+                  <div class="filter-item all mentors">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/ezequiel.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Ezequiel Díaz</p>
+                      <div>
+                        <div class="career">Mechanical Engineering</div>
+                        <div class="charge">Team Advisor</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing women-in-stem">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/ingrid.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Ingrid López</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Team Leader</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/nestor.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Nestor Sosa</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Team Leader Assistant</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/mario.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Mario Toribio</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Manufacturing Manager</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/miguela.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Miguel Arredondo</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Mechanical Design Manager</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all telemetry women-in-stem">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/rosanna.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Rosanna Bautista</p>
+                      <div>
+                        <div class="career">Software Engineering</div>
+                        <div class="charge">Telemetry Manager</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all telemetry">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/angel.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Ángel Peña</p>
+                      <div>
+                        <div class="career">Systems Engineering</div>
+                        <div class="charge">Telemetry Assistant</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/miguelj.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Miguel Jiménez</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Manufacturing Assistant</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/brian.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Brian González</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Manufacturing Assistant</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/diego.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Diego Veloz</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Manufacturing Assistant</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing women-in-stem">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/guadalupe.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Guadalupe Bonilla</p>
+                      <div>
+                        <div class="career">Mechanical Engineering</div>
+                        <div class="charge">Safety Officer</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all women-in-stem">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/carla.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Carla Polanco</p>
+                      <div>
+                        <div class="career">Industrial Engineering</div>
+                        <div class="charge">Funding Manager</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all women-in-stem">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/faisy.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Faisy Alcántara</p>
+                      <div>
+                        <div class="career">Biomedical Engineering</div>
+                        <div class="charge">STEM Manager</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/eduardo.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Eduardo Ortega</p>
+                      <div>
+                        <div class="career">Aeroespacial Engineering</div>
+                        <div class="charge">STEM Assistant</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/franmil.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Franmil Estrella</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">3D Printing Manager</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all mentors telemetry manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/chaljub.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Carlos Chaljub</p>
+                      <div>
+                        <div class="career">Mechatronics Engineering</div>
+                        <div class="charge">Special Mentor</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-item all mentors manufacturing">
+                    <div class="item-img">
+                      <img src="./img/about-us/team-members/edward.png" alt="Item image">
+                    </div>
+                    <div class="item-info">
+                      <p>Edward García</p>
+                      <div>
+                        <div class="career">Mechanical Engineering</div>
+                        <div class="charge">Special Mentor</div>
+                      </div>
+                    </div>
+                  </div>
+          </section>
+          <!-- NUESTROS PREMIOS -->
+          <section id="awards-section">
+            <div class="title">
+              <h2>Our Awards</h2>
+            </div>
+            <div class="ag-format-container">
+              <div class="ag-courses_box">
+                <div class="ag-courses_item">
+                  <a class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                      System Safety Award
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                      Winning this award, the first for any Dominican team,
+                      demonstrated our unwavering commitment to safety and innovation in engineering.
+                      Our rover exceeded safety standards, showcasing our expertise and dedication
+                      to creating reliable and secure technology, setting a high standard for future
+                      teams and highlighting the potential of Dominican talent.
+                      <span class="ag-courses-item_date">
+                        2020
+                      </span>
+                    </div>
+                  </a>
+                </div>
+            
+                <div class="ag-courses_item">
+                  <a class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                      STEM Engagement Award
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                      The introduction of the STEM Tour and its hands-on activities was
+                      a significant achievement, and it enabled the team to win the award.
+                      This recognition highlights the team's efforts to promote STEM education
+                      and its impact on the Dominican Republic's society.
+                      <span class="ag-courses-item_date">
+                        2022
+                      </span>
+                    </div>
+                  </a>
+                </div>
+            
+                <div class="ag-courses_item">
+                  <a class="ag-courses-item_link">
+                    <div class="ag-courses-item_bg"></div>
+            
+                    <div class="ag-courses-item_title">
+                      Coming Soon
+                    </div>
+            
+                    <div class="ag-courses-item_date-box">
+                      This year, we are raising the bar even higher and striving to improve
+                      in every category. Our team is determined to continue making strides
+                      in the field of engineering and technology, and we are excited to see
+                      where our dedication and hard work will take us.
+                      <span class="ag-courses-item_date">
+                        2023
+                      </span>
+                    </div>
+                  </a>
+                </div>
+          <!-- SECCIÓN DE STEM -->
+          <section id="stem">
+            <div class="title">
+              <h2>Apolo 27 + STEM</h2>
+            </div>
+            <header class="header">
+              <h1 class="header-title masthead">STEM for All to Change the World</h1>
+            </header>
+            <main class="main">
+              <article class="entry entry-lede">
+                <img class="entry-img" src="/img/about-us/stem/stem-1.jpg" alt="stem-img1"/>
+                <div class="entry-content">
+                  <h1 class="entry-headline primary-headline">The Importance of STEM for our team</h1>
+                  <time class="entry-date meta">The Vital Importance of STEM Education in Today's World</time>
+                  <p class="entry-summary">STEM, which stands for Science, Technology, Engineering 
+                    and Mathematics, plays a crucial role in the success of Team Apolo 27. In fact,
+                    it is impossible to overstate the importance of STEM in the work that this team does.</p>
+                </div>
+              </article>
+              <article class="entry">
+                <img class="entry-img" src="/img/about-us/stem/stem-2.jpg" alt="The profile view of three majestic brown horses" />
+                <h1 class="entry-headline primary-headline">Girls are the future</h1>
+                <time class="entry-date meta">March 8, 2023</time>
+                <span class="entry-byline meta">Women In STEM Panel</span>
+                <p class="entry-summary">Furthermore, including girls in STEM fields can bring unique perspectives
+                  and creativity to these industries. Women have made significant contributions to the fields
+                  of science and technology throughout history, and it is essential to continue this trend by
+                  encouraging girls to participate. By providing opportunities and support for girls interested
+                  in STEM, we can create a more equitable and innovative future.</p>
+              </article>
+              <article class="entry">
+                <img class="entry-img" src="/img/about-us/stem/stem-3.jpg" alt="The profile view of three majestic brown horses" />
+                <h1 class="entry-headline primary-headline">We believe in Dominican youth</h1>
+                <time class="entry-date meta">March 29, 2023</time>
+                <span class="entry-byline meta">School Visits</span>
+                <p class="entry-summary">Raising awareness about the importance of STEM education in
+                  Dominican society is crucial, and our team has been visiting schools to promote this
+                  message. Through these visits, we strive to inspire young students to pursue careers
+                  in science, technology, engineering, and math. We highlight the benefits of STEM education
+                  and showcase its relevance to everyday life. </p>
+              </article>
+              <section class="trending">
+                <article class="trending-entry">
+                  <h1 class="trending-entry-headline primary-headline">Our events inspire individuals to pursue their passions.</h1>
+                </article>
+                <article class="trending-entry">
+                  <h1 class="trending-entry-headline primary-headline"><br>We showcase the power of hard work to achieve success.</h1>
+                </article>
+              </section>              
+            </main>  
+          </section>
+      <!-- FOOTER -->
+
+      <!-- BOTÓN MODO CLARO Y OSCURO -->
+      <div class="bottom-area">
+        <div class="container">
+          <button class="toggle-btn">
+            <i class="far fa-sun"></i>
+            <i class="far fa-moon"></i>
+          </button>
+        </div>
+      </div>
+  </main>
+  
+  <!-- SCRIPTS -->
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="general.js"></script>
+  <script src="about-us.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>

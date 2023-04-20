@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apolo 27</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo-white.ico">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    <script src="https://apis.google.com/js/api.js"></script>
+
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+
+        <header>
+          <div class="container">
+
+            <div class="logo">
+              <img src="./img/logo.png" alt="Logo" />
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a id="home-button">Home</a></li>
+                <li><a id="about-us-button">About Us</a></li>
+                <li><a id="blog-button">Blog</a></li>
+                <li><a id="data-dashboard-button">Data Dashboard</a></li>
+                <li><a id="sponsors-button">Sponsors</a></li>
+                <li><a id="social-media-button">Social Media</a></li>
+              </ul>
+            </div>
+            
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+          <div class="showcase-area">
+            <div class="container" style="padding-left: 10%; padding-right: 10%;">
+              <!-- background-red -->
+              <div class="row mt-2" style="text-align: center;">
+                <div class="div">
+                  <svg class="background-red col-lg-12" viewBox="0 0 1537 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_i_159_12)">
+                    <rect width="1537" height="220" rx="60" fill="#CE1212"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_i_159_12" x="0" y="0" width="1537" height="274" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_159_12"/>
+                    </filter>
+                    </defs>
+                    </svg>
+
+                    <h1 class="title-h1">Apolo Blog <div class="fa"><i class="fa-solid fa-shuttle-space fa-beat-fade" style="color: white;"></i></div></i></i></h1>
+
+                    <div class="searchbox">
+                      <input type="text" class="search-input" placeholder="Search">
+                      <button class="search-button"><i class="fas fa-search"></i></button>
+                      <span class="number">0</span>
+                    </div>
+                </div>
+              </div>
+              <div class="row mt-lg-5">
+                <div class="col links-buttons">
+                  <div class="d-flex flex-wrap align-items-center labels ">
+                    <span class="me-2 active" id="all-button" onclick='activeButton(this, "all")'>All</span>
+                    <span class="me-2" onclick='activeButton(this, "Telemetría")'>Telemetry</span>
+                    <span class="me-2" onclick='activeButton(this, "STEM")'>STEM</span>
+                    <span class="me-2" onclick='activeButton(this, "Manufactura")'>Manufacturing</span>
+                    <span class="me-2" onclick='activeButton(this, "Blog")'>Blog</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row" id="mainCard">
+                
+              </div>
+              <hr class="hr-animated mb-lg-0 mb-sm-5 mt-sm-5" style="filter: brightness(150%)">
+              
+              <div class="d-flex row" id="containerMini">
+                
+                <!-- <div class="card col-lg-4 card-1">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 card-image-small">
+                      <img src="https://diariodominicano.com/wp-content/uploads/2023/03/Intec-STEM-Tour-equipo-Apolo-27-21-3-23.jpg" class="card-img-top" alt="STEM Tour">
+                    </div>
+                    <div class="col-md-12">
+                      <div class="card-body">
+                        <h4 class="card-title">STEM</h4>
+                        <h3 class="card-subtitle mb-2">What is “STEM Tour” and why you should bring your children</h3>
+                        <p class="card-text">In order to promote the practical teaching of science and motivate the community to take an interest in its different branches, the science, technology, engineering and mathematics event entitled "Stem Tour" was held......</p>
+                        <div class="author mt-4">
+                          <img src="img/FAISY 2.png">
+                          <div class="info">
+                            <h5>Faisy Alcántara</h5>
+                            <h5>STEM Manager</h5>
+                            <h5>Jan 21, 2023</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-lg-4 card-2">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 card-image-small">
+                      <img src="https://diariodominicano.com/wp-content/uploads/2023/03/Intec-STEM-Tour-equipo-Apolo-27-21-3-23.jpg" class="card-img-top" alt="STEM Tour">
+                    </div>
+                    <div class="col-md-12">
+                      <div class="card-body">
+                        <h4 class="card-title">STEM</h4>
+                        <h3 class="card-subtitle mb-2">What is “STEM Tour” and why you should bring your children</h3>
+                        <p class="card-text">In order to promote the practical teaching of science and motivate the community to take an interest in its different branches, the science, technology, engineering and mathematics event entitled "Stem Tour" was held......</p>
+                        <div class="author mt-4">
+                          <img src="img/FAISY 2.png">
+                          <div class="info">
+                            <h5>Faisy Alcántara</h5>
+                            <h5>STEM Manager</h5>
+                            <h5>Jan 21, 2023</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card col-lg-4 card-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-12 card-image-small">
+                      <img src="https://diariodominicano.com/wp-content/uploads/2023/03/Intec-STEM-Tour-equipo-Apolo-27-21-3-23.jpg" class="card-img-top" alt="STEM Tour">
+                    </div>
+                    <div class="col-md-12">
+                      <div class="card-body">
+                        <h4 class="card-title">STEM</h4>
+                        <h3 class="card-subtitle mb-2">What is “STEM Tour” and why you should bring your children</h3>
+                        <p class="card-text">In order to promote the practical teaching of science and motivate the community to take an interest in its different branches, the science, technology, engineering and mathematics event entitled "Stem Tour" was held......</p>
+                        <div class="author mt-4">
+                          <img src="img/FAISY 2.png">
+                          <div class="info">
+                            <h5>Faisy Alcántara</h5>
+                            <h5>STEM Manager</h5>
+                            <h5>Jan 21, 2023</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+
+          </div>
+        
+
+        <div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/901880fe54.js" crossorigin="anonymous"></script>
+    <script src="general.js"></script>
+    <script src="searchbox.js"></script>
+    <script src="blog.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>
